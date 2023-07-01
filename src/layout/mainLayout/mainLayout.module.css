@@ -1,0 +1,26 @@
+/* Minimal Layout styles */
+.miniLayoutContainer {
+  color: var(--primary-fontColor);
+  background: #637675;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 70px 0px 70px;
+  box-sizing: border-box;
+}
+/* Main Layout styles */
+.MainLayoutContainer {
+  min-height: 100vh;
+}
+
+.MainLayoutOutlet {
+  padding: 0px 100px 50px 45px; /* 30px to 0 styles */
+  margin-left: 170px;
+  width: calc(100%-160px);
+}
+
+@media screen and (max-width: 1200px) {
+  .MainLayoutOutlet {
+    padding-right: 30px;
+  }
+}
