@@ -16,3 +16,82 @@
   color: #807f85;
   margin: 0;
 }
+
+.sidebarList::-webkit-scrollbar {
+  width: 0px;
+}
+
+.sidebarList:hover::-webkit-scrollbar,
+.sidebarList {
+  width: 5px;
+}
+
+/* Track */
+.sidebarList::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.sidebarList::-webkit-scrollbar-thumb {
+  background: #ffcc5f78;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+.sidebarList::-webkit-scrollbar-thumb:hover {
+  background: #ffcc5f78;
+}
+.sidebarList {
+  padding: 0;
+  text-align: center;
+  width: 170px;
+  overflow-y: auto;
+  margin: 0;
+  max-height: 566px;
+}
+
+.sidebarRow {
+  display: flex; /* Add this property to make the icon and title appear in a single line */
+  align-items: center; /* Center the items vertically */
+  list-style-type: none;
+  margin: 33.5px 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 15px;
+  color: var(--primary-fontColor);
+  padding: 0px 10px;
+}
+.sidebarRow img {
+  margin: 0px 15px;
+  width: 24px;
+  height: 24px;
+}
+.sidebarList #active {
+  color: #f1702d;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 15px;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.sidebarRow:hover * {
+  cursor: pointer;
+}
+
+.sidebarImgActive {
+  filter: invert(51%) sepia(52%) saturate(3188%) hue-rotate(346deg) brightness(105%) contrast(89%);
+}
+
+.pointerNone {
+  pointer-events: none;
+}
+.sideBarTitle {
+  color: #f1702d;
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 2px;
+}
