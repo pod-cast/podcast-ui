@@ -90,8 +90,11 @@
   pointer-events: none;
 }
 .sideBarTitle {
-  color: #f1702d;
   font-size: 15px;
   font-weight: bold;
   margin-top: 2px;
+}
+.sideBarTitle #active {
+  color: #f1702d;
+  margin: 0;
 }

@@ -35,25 +35,22 @@ function SideBar() {
                 return (
                   <li
                     key={key}
-                    className={`${styles.sidebarRow} ${val?.pointer ? styles.pointerNone : ''}`}
-                    id={
-                      window.location.pathname.includes(val.link.split('/')[0])
-                        ? `${styles.active}`
-                        : ''
-                    }
+                    // className={`${styles.sidebarRow} ${val?.pointer ? styles.pointerNone : ''}`}
+                    className={styles.sidebarRow}
+                    id={window.location.pathname.includes(val.link) ? `${styles.active}` : ''}
                   >
                     <img
                       src={val.icon}
                       alt="menu"
                       onClick={() => handleNavigation(val.link)}
                       className={`${
-                        window.location.pathname.includes(val.link.split('/')[0])
-                          ? styles.sidebarImgActive
-                          : ''
+                        window.location.pathname.includes(val.link) ? styles.sidebarImgActive : ''
                       }`}
                     />
                     <div onClick={() => handleNavigation(val.link)} className={styles.sideBarTitle}>
-                      {val.title}
+                      <p id={window.location.pathname.includes(val.link) ? `${styles.active}` : ''}>
+                        {val.title}
+                      </p>
                     </div>
                   </li>
                 );
